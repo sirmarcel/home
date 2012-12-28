@@ -1,0 +1,116 @@
+$line: 1.5em;
+$font-size: 20px;
+
+
+/*
+*
+*  Margin, padding, and border resets
+*  except for form elements
+*
+*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, nav, section, menu, time, mark, audio, video, canvas {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+/* Basic Styles */
+
+/* Home */
+
+@import "normalize.css";
+
+$comp: #7AAEFF;
+$text: #fefefe;
+$text2: #dddddd;
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	font-family: "Didot";
+	font-size: $font-size;
+	line-height: $line;
+	background-color: #333;
+	/* background: url(bg.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover; */
+	color: $text;
+	@media only screen and (max-width: 600px) {
+		background-position: -300px center;
+	}
+
+}
+
+h2 {
+	font-size: 4em; 
+	font-family: "ChunkFive";
+	font-weight: 400;
+	text-rendering: optimizeLegibility;
+	margin-bottom: 0.5em;
+}
+
+h3 {
+	font-size: 1.8em; 
+	font-family: "ChunkFive";
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-rendering: optimizeLegibility;
+	text-shadow: 3px 3px #33;
+	margin-bottom: 0.5em;
+}
+
+a {
+	color: $text;
+	text-decoration: none;
+
+}
+
+
+
+a:hover {
+	color: $text;
+	-webkit-transition: background 3s ease, color 1s ease;
+	background-color: $comp;
+	text-decoration: underline;
+	}
+
+
+
+header {
+	span {
+		font-style: italic;
+		}
+	}
+
+ul {
+	list-style: plain;
+}
+
+
+body {
+	width: 100%;
+}
+
+
+#wrapper {
+		margin: 2*$line auto 0 auto;
+		width: 320px;
+	}
+	
+header {
+	clear: both;
+	margin: 0;
+	}	
+	
+section {
+	margin-top: $line;
+	clear: both;
+	}
